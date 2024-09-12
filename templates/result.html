@@ -1,0 +1,112 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Disease-Prediction with A.I </title>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/styles.css')}}"/>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
+
+  </head>
+  
+  <body style="background-image: linear-gradient(to right,black, #9070f4">
+
+
+  <script>
+
+  function botResponse() {
+       
+           responsiveVoice.speak("rawText");
+          }
+  </script>
+    <main class="main" style="backg22round-color:rgba(2, 9, 71,0.2)">
+      <!-- HOME SECTION -->
+      <section class="home bd_grid" id="home" >
+ 
+       
+        <div class="home_data" data-aos="fade-down" data-aos-delay="750" ">
+          
+          <h2 class="home_title" style="font-size:30px">
+          <br><br><br> Our Result :
+          <br><span class="home_title-color">{{pred_output}}</span>
+          </h2>
+        </div>
+        <div class="home_data" data-aos="fade-down" data-aos-delay="450">
+           <h2 class="home_title" style="font-size:30px">
+            <br>Result accuracy :<br><span class="home_title-color">{{pred_output_ac}}</span>
+          </h2>
+          <br>
+          <br>
+          <a href="http://127.0.0.1:8080/index" class="button"> back to chatbot</a>
+               
+                <h2 class="home_title" data-aos="fade-down" data-aos-delay="800" style="font-size:30px">
+                <br> Doctor Details :<br><span class="home_title-color">{{doctor}}</span>
+                </h2>
+                  
+
+            
+          
+         
+         </div>
+  <div class="home_data" data-aos="fade-down" data-aos-delay="450">
+         <img src="{{url_for('static',filename='Telehealth.gif')}}"  class="work_img" width="30%" height="20%"> 
+</div>
+
+        <div class="home_social">
+          <a href="#" class="home_social-icon" data-aos="fade-down"
+            ><i class="bx bxl-facebook-circle"></i
+          ></a>
+          <a
+            href="#"
+            class="home_social-icon"
+            data-aos="fade-down"
+            data-aos-delay="250"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            href="#"
+            class="home_social-icon"
+            data-aos="fade-down"
+            data-aos-delay="300"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a
+            href="#"
+            class="home_social-icon"
+            data-aos="fade-down"
+            data-aos-delay="350"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+
+        <div class="home_img" data-aos="fade-down" data-aos-delay="600">
+          <div class="work_img" data-aos="fade-left" data-aos-delay="550" >
+            <img src="{{user_image}}"> 
+          </div>
+       
+      </section>
+      
+
+
+
+         
+    
+     
+
+ 
+      
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{{url_for('static',filename = 'js/main.js')}}"></script>
+
+    <script>
+      AOS.init({
+        duration: 1200,
+        once: false,
+      });
+    </script>
+  </body>
+</html>

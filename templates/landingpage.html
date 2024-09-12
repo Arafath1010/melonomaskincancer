@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home page </title>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'assets/css/style.css')}}"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body style="background-image: linear-gradient(to right,white, #9070f4">
+<!-- Header Section -->
+<header class="header">
+    <nav class="nav bd_grid">
+        <div class="logo">
+            <img src="{{url_for('static',filename='assets/img/logo_web.png')}}" />
+            <h3>Medical Chat</h3>
+          </div>
+
+
+      <div class="nav_menu" id="nav_menu">
+        <ul class="nav_list">
+          <li class="nav_items">
+            <a href="#home" class="nav_link active">Home</a>
+          </li>
+          <li class="nav_items">
+            <a href="#about" class="nav_link active">About Us</a>
+          </li>
+          <li class="nav_items">
+            <a href="#features" class="nav_link active">Features</a>
+          </li>
+          <li class="nav_items">
+            <a href="#members" class="nav_link active">Members</a>
+          </li>
+        
+        </ul>
+      </div>
+
+      <div class="nav_toggle" id="nav_toggle">
+        <i class="bx bx-menu-alt-right"></i>
+      </div>
+    </nav>
+  </header>
+<!-- End of the Header Section -->
+
+
+<!--Starting of the MAIN PART-->
+<main class="main">
+
+
+    <!-- HOME SECTION -->
+    <section class="home bd_grid" id="home">
+      <div class="home_data" data-aos="fade-down">
+        <h1 class="home_title"> <span class="home_title-color">We are ready to help,<br/>take care of your health.</span>
+        </h1>
+        <a href="http://127.0.0.1:8080/registerpage" class="button">Sign Up</a>
+      </div>
+
+      <div class="home_social">
+        <a href="#" class="home_social-icon" data-aos="fade-down"><i class="bx bxl-facebook-circle"></i></a>
+        <a href="#"class="home_social-icon" data-aos="fade-down" data-aos-delay="250"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="home_social-icon" data-aos="fade-down" data-aos-delay="300" ><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="home_social-icon" data-aos="fade-down" data-aos-delay="350"><i class="bx bxl-github"></i></a>
+      </div>
+
+      <div class="home_img" data-aos="fade-down" data-aos-delay="500">
+      
+      <img src="{{url_for('static',filename='assets/img/doctors.png')}}" />
+      </div>
+
+    </section>
+    <!--End of the HOME SECTION -->
+
+
+    
+      <!-- ABOUT SECTION -->
+      <section class="about section" id="about">
+        <h2 class="section-title" data-aos="fade-down">About Us
+        </h2>
+
+        <div class="about_container bd_grid">
+          <div class="about_img" data-aos="fade-left" data-aos-delay="50">
+       
+          <img src="{{url_for('static',filename='assets/img/img1.png')}}" />
+            </div>
+       
+        <div>
+            <h2 class="about_subtitle" data-aos="fade-left" data-aos-delay="350">
+            Medical Chat
+            </h2>
+            <p class="about_text" data-aos="fade-left" data-aos-delay="450">
+                This is user friendly system which make 
+                medical consultation easily. <br>
+                This saves ample time and also Chatbot make interaction easier.  <br>This Can be operated easily by any user
+                <br>
+             
+            </p>
+            </div> 
+        </div>
+      
+      </section>
+      <!--End of the  ABOUT SECTION -->
+<!-- features SECTION -->
+
+    <section class="features section" id="features">
+    <h2 class="section-title" data-aos="fade-down">Features</h2>
+
+    <div class="features_container bd_grid">
+        <div class="about_img" data-aos="fade-left" data-aos-delay="50">
+            <img src="{{url_for('static',filename='assets/img/chatbox.png')}}" />
+            <br>
+            <img src="{{url_for('static',filename='assets/img/medical.png')}}" />
+            
+           
+        </div>
+   
+        <p class="about_text" data-aos="fade-left" data-aos-delay="450">
+            This system and direct diseases on its own.<br><br>
+            Person can register, then can login to the system.<br><br>
+            Chatbot using interactive voice commands.<br><br>
+            This system generates summary reports.<br><br>
+            If the system detects disease, it provides with information on which doctor to be consulted in the future<br>
+
+        </p>
+    </div>
+  </section>
+  <!--End of the CONTACT SECTION -->
+
+
+       <!-- Members SECTION -->
+       <section class="work section" id="members">
+        <h2 class="section-title" data-aos="fade-down">Members</h2>
+
+        <div
+          class="work_container bd_grid"
+          data-aos="fade-down"
+          data-aos-delay="250"
+        >
+        
+        <div class="about_img" data-aos="fade-down" data-aos-delay="50">
+            <img src="{{url_for('static',filename='assets/img/members.png')}}" /></div>
+
+          <div class="work_img">
+            <p>name 1 </p><img src="{{url_for('static',filename='assets/img/arafath-modified.png')}}" />
+          </div>
+
+          <div class="work_img">
+            <p>name 2  </p><img src="{{url_for('static',filename='assets/img/safras-modified.png')}}" />
+          </div>
+
+        </div>
+      </section>
+       <!--End of the SKILLS SECTION -->
+
+       <!-- Footer Section -->
+       <footer class="footer">
+        <p class="footer_title" data-aos="fade-right">TDR System</p>
+
+        <div class="footer_socials">
+          <a
+            href="#"
+            class="footer_icon"
+            data-aos="fade-down"
+            data-aos-delay="250"
+            ><i class="bx bxl-facebook-circle"></i
+          ></a>
+          <a
+            href="#"
+            class="footer_icon"
+            data-aos="fade-down"
+            data-aos-delay="350"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            href="#"
+            class="footer_icon"
+            data-aos="fade-down"
+            data-aos-delay="450"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a
+            href="#"
+            class="footer_icon"
+            data-aos="fade-down"
+            data-aos-delay="550"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+
+        <p data-aos="fade-right" data-aos-delay="650">
+          &#169; 2022 copyright all right reserved
+        </p>
+      </footer>
+       <!--End of the Footer Section -->
+
+</main>
+<!--Script tags-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="{{url_for('static',filename = 'assets/js/main.js')}}"></script>
+<script>AOS.init({duration: 1200,once: false,});</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI diabetes prediction</title>
+
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/style_d.css')}}"/>
+</head>
+
+    <!-- Main -->
+    <section id="main" style="background-image: linear-gradient(to right,black, #9070f4">
+        <!-- Glass Box -->
+        <div class="main-box">
+
+
+
+<form action="/diabetes" method="post"  enctype="multipart/form-data"  onsubmit="showloading()" >
+
+<center>
+<br>
+<br>
+<br>
+<img src="{{url_for('static',filename='Telehealth.gif')}}" />
+<p class="btn1" style="font-size:20px" >{{result}}</p>
+
+
+<br>
+<input type="submit"  value="back to diabetes predictor" class="btn1">
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+        </div>
+    </section>
+    <!-- circles -->
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+</body>
+</html>

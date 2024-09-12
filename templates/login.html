@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/login-style.css')}}"/>
+    <title>Sign in Form</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="panels-container">
+        <div class="content">
+          <h3>New here ?</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+            ex ratione. Aliquid!
+          </p>
+          <form action="/registerpage" method="post"  enctype="multipart/form-data"  onsubmit="showloading()" >
+          <input type="submit" class="btn solid" value="Sign Up" />
+          </form>
+        </div>
+        <div class="panels-container-bg">
+          <img src="{{url_for('static',filename='Telehealth.gif')}}" />
+        </div>
+      </div>
+
+      <div class="forms-container">
+      <form action="/login" method="post"  enctype="multipart/form-data"  onsubmit="showloading()" class="sign-in-form">
+      
+          <h2 class="title">Sign in</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" name="name"/>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" name="pass"/>
+          </div>
+          <input type="submit" value="Login" class="btn solid" />
+        </form>
+      </div>
+    </div>
+
+    <script src="./login.js"></script>
+  </body>
+</html>

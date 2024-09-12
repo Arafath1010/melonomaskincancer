@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/register.css')}}"/>
+    <title>Sign up Form</title>
+  </head>
+  <body>
+    <div class="register-container">
+      <div class="panels-container">
+        <div class="content">
+          <h3>One of us ?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            laboriosam ad deleniti.
+          </p>
+          <a class="sign-up-btn" href="http://127.0.0.1:8080/loginpage"> Sign in</a>
+        </div>
+        <div class="panels-container-bg">
+          <img src="{{url_for('static',filename='Telehealth.gif')}}" />
+        </div>
+      </div>
+
+      <div class="forms-container">
+        <form id="register-form" class="sign-in-form"  action="/register" method="post"  enctype="multipart/form-data"  onsubmit="showloading()" class="sign-in-form">
+          <h2 class="title">Sign Up</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input id="username" type="text" placeholder="Username" name="username"/>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input id="password" type="password" placeholder="Password" name="password" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input id="email" type="email" placeholder="Email" name="email" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input id="nic" type="text" placeholder="Nic"  name="nic"/>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input id="DOB" type="date" placeholder="DOB" name="dob"/>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input id="pNumber" type="text" placeholder="Phone Number" name="phonenumber"/>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input id="address" type="text" placeholder="Address" name="address"/>
+          </div>
+          <input type="submit" value="Register" class="btn solid" />
+        </form>
+      </div>
+    </div>
+
+    <script src="/register.js"></script>
+  </body>
+</html>
